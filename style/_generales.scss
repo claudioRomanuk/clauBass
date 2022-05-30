@@ -1,0 +1,39 @@
+header{
+    
+    background-color:RGB(158 163 175);
+    height: 202px;
+    margin-top: 0;
+    grid-area: header;
+    background-image: linear-gradient(to top,RGB(158 163 175),RGB(193 197 207));
+    
+    nav ul li a{
+        text-decoration: none;
+        font-size: 1cm;
+        font-family: 'Comic Neue', cursive;
+        color:rgba(115, 112, 116, 0.986);
+       
+    
+    }
+    
+}
+
+footer{
+    display: flex;
+    background-color: RGB(158 163 175);
+    padding: 50PX;
+    height: 50px;
+    margin-top: 115px;
+    grid-area: footer;
+    justify-content: center;
+
+}
+
+nav ul li a:hover{
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:rgba(217, 213, 220, 0.986);
+    transition: all ease 0.5s;
+    border-radius: 10px;
+    
+
+}
+

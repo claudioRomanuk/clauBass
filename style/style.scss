@@ -1,73 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Oswald:wght@300&family=Plus+Jakarta+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Oswald:wght@300&family=Plus+Jakarta+Sans:wght@300&display=swap');
+@import"variables";
+@import"generales";
+@import"layouts";
+
 *{
     padding: 0;
     margin: 0;
     }
 
-.layout{
-    display: grid;
-    grid-template-columns: 0.50fr 1.50fr 1.50fr 0.50fr;
-    grid-template-rows: 0.20fr 1fr 1fr 0.15fr ;
-    grid-template-areas: 
-    "header header header header"
-    ". contenido contenido ."
-    ". contenido contenido ."
-    "footer footer footer footer";
-    }
-    
-.layoutcontacto{
-    display: grid;
-    grid-template-columns:0.50fr 1fr 1fr 0.50fr;
-    grid-template-rows:1fr 1.50fr 1.50fr 1fr; 
-    grid-template-areas: 
-    "header header header header "
-    ". parrafos parrafos .  "
-    ". parrafos parrafos .  "
-    "footer footer footer footer ";
-        }
-.parrafos{
-    margin-top: 50px;
-    grid-area: parrafos;
-    height: 700px;
-}
-        
-        
-.layoutaudios{
-    display: grid;
-    grid-template-columns: 0.50fr 1.50fr 1.50fr 0.50fr;
-    grid-template-rows: 0.20fr 1fr 0.10fr ;
-    grid-template-areas: 
-     "header header header header"
-     ". contenido contenido ."
-     "footer footer footer footer";
-      }
 
-.contenido{
-    grid-area: contenido;
-}
-
-.videos{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "vid1 vid2"
-    "vid3 .";
-    margin-left: 147px;
-    margin-top: 10px;
-}
-.vid1{
-    grid-area: vid1;
-}
-
-.vid2{
-    grid-area: vid2;
-}
-
-.vid3{
-    grid-area: vid3;
-}
 .clau-bass{
 
     display:flex;
@@ -81,15 +23,8 @@
     
    
     }
-header{
-    
-    background-color:rgb(158 163 175);
-    height: 202px;
-    margin-top: 0;
-    grid-area: header;
-    background-image: linear-gradient(to top,rgb(158 163 175),rgb(193 197 207));
-    
-}
+
+    @import"generales";
 
 .contenido{
     display:flex;
@@ -97,18 +32,18 @@ header{
 }
 .principal{
 
-    color:rgb(27, 24, 24);
+    color:$textos;
     
 }
 .titulos{
-    color: rgb(32, 29, 29);
+    color: $textos;
     padding: 1px;
     font-family: 'Comic Neue', cursive;
     font-size: 45px;
 }
 
 .tituloaudios{
-    color: rgb(32, 29, 29);
+    color: $textos;
     padding: 1px;
     font-family: 'Comic Neue', cursive;
     font-size: 45px;
@@ -119,7 +54,7 @@ header{
 
 
 #tituloindex{
-    color: rgb(32, 29, 29);
+    color: $textos;
     padding: 1px;
     font-family: 'Comic Neue', cursive;
     font-size: 45px;
@@ -133,26 +68,13 @@ header{
     list-style-type: none;
     margin-top: 7px;
     border-radius: 5px rgba(115, 112, 116, 0.986) ;
+  
+    
     
 }
 
-nav ul li a:hover{
-    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-	background:rgba(217, 213, 220, 0.986);
-    transition: all ease 0.5s;
-    border-radius: 10px;
-    
 
-}
 
-nav ul li a{
-    text-decoration: none;
-    font-size: 1cm;
-    font-family: 'Comic Neue', cursive;
-    color:rgba(115, 112, 116, 0.986);
-   
-
-}
 
 
 .parrafoindex{
@@ -167,23 +89,15 @@ nav ul li a{
 
 .footerindex{
     display:flex;
-    background-color: rgb(158 163 175);
+    background-color: RGB(158 163 175);
     height: 50px;
     margin-top: 40px;
     grid-area: footer;
     justify-content: center;
 
 }
-footer{
-    display: flex;
-    background-color: rgb(158 163 175);
-    padding: 50PX;
-    height: 50px;
-    margin-top: 115px;
-    grid-area: footer;
-    justify-content: center;
 
-}
+
 .copyright{
     color: rgb(255, 255, 255);
     font-family: 'Comic Neue', cursive;
@@ -193,7 +107,7 @@ footer{
 
 
 body{
-    background-color: rgb(237 241 240);
+    background-color: RGB(237 241 240);
 
 }
 .figura{

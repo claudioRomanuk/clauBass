@@ -1,0 +1,63 @@
+.layout{
+    display: grid;
+    grid-template-columns: 0.50fr 1.50fr 1.50fr 0.50fr;
+    grid-template-rows: 0.20fr 1fr 1fr 0.15fr ;
+    grid-template-areas: 
+    "header header header header"
+    ". contenido contenido ."
+    ". contenido contenido ."
+    "footer footer footer footer";
+    }
+    
+.layoutcontacto{
+    display: grid;
+    grid-template-columns:0.50fr 1fr 1fr 0.50fr;
+    grid-template-rows:1fr 1.50fr 1.50fr 1fr; 
+    grid-template-areas: 
+    "header header header header "
+    ". parrafos parrafos .  "
+    ". parrafos parrafos .  "
+    "footer footer footer footer ";
+        }
+.parrafos{
+    margin-top: 50px;
+    grid-area: parrafos;
+    height: 700px;
+}
+        
+        
+.layoutaudios{
+    display: grid;
+    grid-template-columns: 0.50fr 1.50fr 1.50fr 0.50fr;
+    grid-template-rows: 0.20fr 1fr 0.10fr ;
+    grid-template-areas: 
+     "header header header header"
+     ". contenido contenido ."
+     "footer footer footer footer";
+      }
+
+.contenido{
+    grid-area: contenido;
+}
+
+.videos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "vid1 vid2"
+    "vid3 .";
+    margin-left: 147px;
+    margin-top: 10px;
+}
+.vid1{
+    grid-area: vid1;
+}
+
+.vid2{
+    grid-area: vid2;
+}
+
+.vid3{
+    grid-area: vid3;
+}
