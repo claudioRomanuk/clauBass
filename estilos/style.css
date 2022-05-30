@@ -25,9 +25,8 @@ footer {
   display: flex;
   background-color: RGB(158 163 175);
   padding: 50PX;
-  height: 50px;
   margin-top: 115px;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: footer;
@@ -42,6 +41,7 @@ nav ul li a:hover {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   border-radius: 10px;
+  color: rgba(115, 112, 116, 0.986);
 }
 
 .layout {
@@ -86,6 +86,7 @@ nav ul li a:hover {
 
 .contenido {
   -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: contenido;
@@ -121,6 +122,73 @@ nav ul li a:hover {
   grid-area: vid3;
 }
 
+.layoutclases {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.50fr 1.50fr 1.50fr 0.50fr;
+      grid-template-columns: 0.50fr 1.50fr 1.50fr 0.50fr;
+  -ms-grid-rows: 0.20fr 1fr 1fr 0.15fr;
+      grid-template-rows: 0.20fr 1fr 1fr 0.15fr;
+      grid-template-areas: "header header header header" ". contenido contenido ." ". contenido contenido ." "footer footer footer footer";
+}
+
+.sectionclases {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: contenido;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "textoclases imagenclases" "textoclases imagenclases";
+}
+
+.imagenclases {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: imagenclases;
+}
+
+.textoclases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: textoclases;
+  background-color: #eee4e1;
+  width: 55vh;
+  margin-left: 100px;
+  gap: 20px;
+}
+
+.parrafoclases {
+  width: 50vh;
+  margin-left: 2vh;
+  font-size: 1.0vw;
+  margin-top: 15vh;
+}
+
+.tituloclases {
+  color: #191717;
+  padding: 1px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 45px;
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 2vh;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -131,7 +199,7 @@ nav ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Comic Neue', cursive;
-  color: white;
+  color: #f3cca9;
   font-size: 2.2cm;
   margin-top: 40px;
   -webkit-box-pack: center;
@@ -164,9 +232,8 @@ footer {
   display: flex;
   background-color: RGB(158 163 175);
   padding: 50PX;
-  height: 50px;
   margin-top: 115px;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: footer;
@@ -181,6 +248,7 @@ nav ul li a:hover {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   border-radius: 10px;
+  color: rgba(115, 112, 116, 0.986);
 }
 
 .contenido {
@@ -188,6 +256,7 @@ nav ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: contenido;
@@ -217,7 +286,7 @@ nav ul li a:hover {
   color: #191717;
   padding: 1px;
   font-family: 'Comic Neue', cursive;
-  font-size: 45px;
+  font-size: 2.5vw;
   position: absolute;
   margin-top: 100px;
   margin-left: 124px;
@@ -249,9 +318,8 @@ nav ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   background-color: RGB(158 163 175);
-  height: 50px;
-  margin-top: 40px;
-  -ms-grid-row: 3;
+  margin-top: 0px;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: footer;
@@ -290,6 +358,7 @@ body {
           justify-content: space-between;
   margin-top: 100px;
   height: 200px;
+  gap: 20px;
 }
 
 .nombre {
@@ -308,6 +377,15 @@ body {
   font-size: 25px;
   margin-top: 15px;
   position: absolute;
+  gap: 10px;
+}
+
+.imagenclases {
+  width: 55vh;
+}
+
+.footerclases {
+  margin-top: 0%;
 }
 
 @media (max-width: 400px) {

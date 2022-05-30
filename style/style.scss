@@ -14,7 +14,7 @@
 
     display:flex;
     font-family: 'Comic Neue', cursive;
-    color:rgb(255, 255, 255);
+    color:#f3cca9;
     font-size: 2.2cm;
     margin-top: 40px;
     justify-content: center;
@@ -22,9 +22,9 @@
    
     
    
-    }
+}
 
-    @import"generales";
+@import"generales";
 
 .contenido{
     display:flex;
@@ -57,7 +57,7 @@
     color: $textos;
     padding: 1px;
     font-family: 'Comic Neue', cursive;
-    font-size: 45px;
+    font-size: 2.5vw;
     position: absolute;
     margin-top: 100px;
     margin-left: 124px;
@@ -90,10 +90,9 @@
 .footerindex{
     display:flex;
     background-color: RGB(158 163 175);
-    height: 50px;
-    margin-top: 40px;
+    margin-top: 0px;
     grid-area: footer;
-    justify-content: center;
+    justify-content: center
 
 }
 
@@ -123,6 +122,7 @@ body{
     justify-content:space-between;
     margin-top: 100px;
     height: 200px;
+    gap: 20px;
     
     
 }
@@ -147,7 +147,16 @@ body{
     font-size: 25px;
     margin-top: 15px;
     position: absolute;
+    gap: 10px;
     }
+
+.imagenclases{
+    width: 55vh;
+}
+
+.footerclases{
+    margin-top: 0%;
+}
 
 
 

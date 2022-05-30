@@ -61,3 +61,53 @@
 .vid3{
     grid-area: vid3;
 }
+.layoutclases{
+    display: grid;
+    grid-template-columns: 0.50fr 1.50fr 1.50fr 0.50fr;
+    grid-template-rows: 0.20fr 1fr 1fr 0.15fr ;
+    grid-template-areas: 
+    "header header header header"
+    ". contenido contenido ."
+    ". contenido contenido ."
+    "footer footer footer footer";
+    }
+.sectionclases{
+
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "textoclases imagenclases"
+    "textoclases imagenclases";
+}
+.imagenclases{
+    grid-area: imagenclases;
+    
+}
+.textoclases {
+    display: flex;
+    flex-direction: column;
+
+    grid-area:textoclases;
+    background-color: #eee4e1;
+    width: 55vh;
+    margin-left: 100px;
+    gap: 20px;
+   
+}
+.parrafoclases{
+    width: 50vh;
+    margin-left: 2vh;
+    font-size: 1.0vw;
+    margin-top: 15vh;
+}
+.tituloclases{
+    color: $textos;
+    padding: 1px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 45px;
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 2vh;
+}
