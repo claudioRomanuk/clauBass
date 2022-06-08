@@ -1,16 +1,21 @@
 header{
     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color:RGB(158 163 175);
-    height: 202px;
+    height: 140px;
     margin-top: 0;
     grid-area: header;
     background-image: linear-gradient(to top,RGB(158 163 175),RGB(193 197 207));
     
+    
     nav ul li a{
         text-decoration: none;
-        font-size: 1cm;
+        font-size: 2vw;
         font-family: 'Comic Neue', cursive;
-        color:rgba(115, 112, 116, 0.986);
+        color:RGB(249 203 171);
+        gap: 10px;
        
     
     }
@@ -33,7 +38,69 @@ nav ul li a:hover{
     transition: all ease 0.5s;
     border-radius: 10px;
     color:rgba(115, 112, 116, 0.986);
+
+    
     
 
 }
+
+
+.social{
+    position:relative;
+    display: flex;
+    gap:5px;
+    
+   
+}
+
+.sizes{
+
+    height:40px ;
+    width:40px ;
+    margin-top:100px ;
+}
+
+
+
+.logoinsta{
+    @extend .sizes;
+    
+}
+
+.logowasap{
+    @extend .sizes;
+}
+
+.logoyoutube{
+    @extend .sizes;
+}
+
+.logo{
+    height:60px ;
+    width:60px ;
+    margin-left:5px;
+    margin-top:23px;
+
+
+}
+
+
+.header{
+    
+    
+}
+
+.logoYtitulo{
+    margin-top:40px;
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+    margin-top: 60px;
+    
+    
+
+}
+
 
