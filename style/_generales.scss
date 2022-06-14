@@ -8,6 +8,8 @@ header{
     margin-top: 0;
     grid-area: header;
     background-image: linear-gradient(to top,RGB(158 163 175),RGB(193 197 207));
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
     
     
     nav ul li a{
@@ -16,6 +18,7 @@ header{
         font-family: 'Comic Neue', cursive;
         color:RGB(249 203 171);
         gap: 10px;
+        
        
     
     }
@@ -80,9 +83,10 @@ nav ul li a:hover{
     width:60px ;
     margin-left:5px;
     margin-top:23px;
-
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 
 }
+
 
 
 .header{
