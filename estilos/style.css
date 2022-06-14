@@ -31,6 +31,25 @@ header nav ul li a {
   font-family: 'Comic Neue', cursive;
   color: RGB(249 203 171);
   gap: 10px;
+  margin-top: 1px;
+  padding: 1px;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin-top: 100px;
+  border-radius: 2px rgba(115, 112, 116, 0.986);
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: none;
 }
 
 footer {
@@ -54,8 +73,9 @@ nav ul li a:hover {
   background: rgba(217, 213, 220, 0.986);
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
-  border-radius: 10px;
+  border-radius: 5px;
   color: rgba(115, 112, 116, 0.986);
+  padding: 1px;
 }
 
 .social {
@@ -90,6 +110,12 @@ nav ul li a:hover {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 60px;
+}
+
+#nav-boton {
+  color: RGB(249 203 171);
+  padding: 1px;
+  gap: 10px;
 }
 
 .layout {
@@ -284,6 +310,25 @@ header nav ul li a {
   font-family: 'Comic Neue', cursive;
   color: RGB(249 203 171);
   gap: 10px;
+  margin-top: 1px;
+  padding: 1px;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin-top: 100px;
+  border-radius: 2px rgba(115, 112, 116, 0.986);
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: none;
 }
 
 footer {
@@ -307,8 +352,9 @@ nav ul li a:hover {
   background: rgba(217, 213, 220, 0.986);
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
-  border-radius: 10px;
+  border-radius: 5px;
   color: rgba(115, 112, 116, 0.986);
+  padding: 1px;
 }
 
 .social {
@@ -345,6 +391,12 @@ nav ul li a:hover {
   margin-top: 60px;
 }
 
+#nav-boton {
+  color: RGB(249 203 171);
+  padding: 1px;
+  gap: 10px;
+}
+
 .contenido {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,22 +429,6 @@ nav ul li a:hover {
   margin-left: 170px;
   position: absolute;
   text-shadow: 0.3px 0.3px 0.4px black;
-}
-
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style-type: none;
-  margin-top: 80px;
-  border-radius: 5px rgba(115, 112, 116, 0.986);
-  gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .parrafoindex {
@@ -523,7 +559,7 @@ body {
   body {
     background-color: #ede3e0;
   }
-  .navbar {
+  #navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -537,6 +573,7 @@ body {
     margin-bottom: 0px;
     margin-top: 130px;
     gap: 1px;
+    position: absolute;
   }
   header {
     display: -webkit-box;
@@ -559,12 +596,11 @@ body {
     background-image: -webkit-gradient(linear, left bottom, left top, from(RGB(158 163 175)), to(RGB(193 197 207)));
     background-image: linear-gradient(to top, RGB(158 163 175), RGB(193 197 207));
   }
-  header nav ul li a {
-    text-decoration: none;
+  header #nav-boton {
     font-size: 20px;
     font-family: 'Comic Neue', cursive;
-    color: rgba(115, 112, 116, 0.986);
     gap: 30px;
+    background-color: #646a7c;
   }
   .clau-bass {
     font-size: 20px;
@@ -676,7 +712,7 @@ body {
   body {
     background-color: #ede3e0;
   }
-  .navbar {
+  #navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -690,6 +726,10 @@ body {
     margin-bottom: 0px;
     margin-top: 130px;
     gap: 1px;
+    position: absolute;
+  }
+  #nav-boton {
+    background-color: #646a7c;
   }
   header {
     display: -webkit-box;
@@ -711,13 +751,6 @@ body {
     grid-area: header;
     background-image: -webkit-gradient(linear, left bottom, left top, from(RGB(158 163 175)), to(RGB(193 197 207)));
     background-image: linear-gradient(to top, RGB(158 163 175), RGB(193 197 207));
-  }
-  header nav ul li a {
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Comic Neue', cursive;
-    color: rgba(115, 112, 116, 0.986);
-    gap: 30px;
   }
   .clau-bass {
     font-size: 30px;
@@ -835,15 +868,14 @@ body {
     margin-left: 5px;
     margin-top: 52px;
   }
-  .navbar {
+  #navbar {
     margin-top: 108px;
     gap: 1vw;
+    position: absolute;
   }
-  nav ul li a {
-    font-size: 10px;
-    border-color: rgba(115, 112, 116, 0.986);
-    border-width: 2px;
-    border-style: solid;
+  #nav-boton {
+    font-size: 15px;
+    background-color: #646a7c;
   }
   .tituloindex {
     margin-top: 25px;
@@ -931,12 +963,13 @@ body {
 }
 
 @media (min-width: 791px) and (max-width: 991px) {
-  nav ul li a {
+  #nav-boton {
     text-decoration: none;
-    font-size: 0.5vw;
+    font-size: 2vw;
     font-family: 'Comic Neue', cursive;
-    color: rgba(115, 112, 116, 0.986);
+    color: RGB(249 203 171);
     gap: 10px;
+    background-color: #646a7c;
   }
   .clau-bass {
     font-size: 40px;
@@ -949,8 +982,9 @@ body {
     margin-left: 5px;
     margin-top: 42px;
   }
-  .navbar {
-    margin-top: 11vh;
+  #navbar {
+    margin-top: 8.5vh;
+    position: absolute;
   }
   .figura {
     margin-left: 2vh;
@@ -985,7 +1019,7 @@ body {
     margin-left: 5px;
     margin-top: 42px;
   }
-  .navbar {
+  #navbar {
     margin-top: 10.5vh;
   }
   .figura {
@@ -1010,7 +1044,7 @@ body {
 }
 
 @media (min-width: 1100px) and (max-width: 1399px) {
-  .navbar {
+  #navbar {
     margin-top: 10vh;
   }
   .figura {
@@ -1030,7 +1064,7 @@ body {
 }
 
 @media (min-width: 1400px) and (max-width: 1700px) {
-  .navbar {
+  #navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

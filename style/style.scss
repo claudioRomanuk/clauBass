@@ -67,18 +67,7 @@
     text-shadow: 0.3px 0.3px 0.4px black;
     
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 80px;
-    border-radius: 5px rgba(115, 112, 116, 0.986) ;
-    gap: 20px;
-    align-items: center;
-  
-    
-    
-}
+
 
 
 
@@ -209,13 +198,14 @@ body{
 
         background-color: #ede3e0;
     }
-    .navbar{
+    #navbar{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom:0px;
         margin-top: 130px;
         gap: 1px;
+        position: absolute;
         
         
         
@@ -233,12 +223,18 @@ body{
         background-image: linear-gradient(to top,RGB(158 163 175),RGB(193 197 207));
         
         
-        nav ul li a{
-            text-decoration: none;
+        #nav-boton{
+            
             font-size: 20px;
             font-family: 'Comic Neue', cursive;
-            color:rgba(115, 112, 116, 0.986);
             gap: 30px;
+            background-color:#646a7c;
+                    
+                   
+                        
+           
+        
+            
            
         
         }
@@ -391,16 +387,27 @@ body{
 
         background-color: #ede3e0;
     }
-    .navbar{
+    #navbar{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom:0px;
         margin-top: 130px;
         gap: 1px;
+        position:absolute;
+
         
         
         
+    }
+
+    #nav-boton{
+        
+        
+        background-color:#646a7c;
+            
+           
+                
     }
 
     header{
@@ -414,18 +421,7 @@ body{
         grid-area: header;
         background-image: linear-gradient(to top,RGB(158 163 175),RGB(193 197 207));
         
-        
-        nav ul li a{
-            text-decoration: none;
-            font-size: 20px;
-            font-family: 'Comic Neue', cursive;
-            color:rgba(115, 112, 116, 0.986);
-            gap: 30px;
-           
-        
         }
-        
-    }
 
 
 
@@ -586,19 +582,25 @@ body{
         
     }
 
-    .navbar{
+    #navbar{
         margin-top: 108px;
         gap:1vw;
+        position:absolute;
+        
+
         
     }
+
+    
    
    
-    nav ul li a{
+    #nav-boton{
         
-        font-size: 10px;
-        border-color: rgba(115, 112, 116, 0.986);
-        border-width: 2px  ;
-        border-style: solid ;
+        font-size: 15px;
+        background-color:#646a7c;
+            
+           
+                
     }
 
 
@@ -701,12 +703,14 @@ body{
 {
 
 
-    nav ul li a{
+    #nav-boton{
         text-decoration: none;
-        font-size: 0.5vw;
+        font-size: 2vw;
         font-family: 'Comic Neue', cursive;
-        color:rgba(115, 112, 116, 0.986);
+        color:RGB(249 203 171);
         gap: 10px;
+        background-color:#646a7c;
+        
        
     
     }
@@ -732,8 +736,10 @@ body{
     }
         
 
-    .navbar{
-        margin-top: 11vh;
+    #navbar{
+        margin-top: 8.5vh;
+        position:absolute;
+
     }
 
     .figura{
@@ -783,7 +789,7 @@ body{
     }
         
 
-    .navbar{
+    #navbar{
         margin-top: 10.5vh;
     }
 
@@ -820,7 +826,7 @@ body{
 }
 @media (min-width: 1100px) and (max-width: 1399px){
 
-    .navbar{
+    #navbar{
         margin-top: 10vh;
     }
 
@@ -856,7 +862,7 @@ body{
 @media (min-width: 1400px) and (max-width: 1700px){
 
 
-.navbar{
+#navbar{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
