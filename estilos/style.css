@@ -25,7 +25,7 @@ header {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-header nav ul li a {
+header #nav-boton {
   text-decoration: none;
   font-size: 2vw;
   font-family: 'Comic Neue', cursive;
@@ -304,7 +304,7 @@ header {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-header nav ul li a {
+header #nav-boton {
   text-decoration: none;
   font-size: 2vw;
   font-family: 'Comic Neue', cursive;
@@ -597,9 +597,8 @@ body {
     background-image: linear-gradient(to top, RGB(158 163 175), RGB(193 197 207));
   }
   header #nav-boton {
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Comic Neue', cursive;
-    gap: 30px;
     background-color: #646a7c;
   }
   .clau-bass {
@@ -616,14 +615,14 @@ body {
     position: relative;
   }
   .tituloindex {
-    margin-top: 250px;
+    margin-top: 50px;
     font-size: 5vw;
     margin-left: 20px;
     border-style: solid;
     border-color: #b5b2b1;
   }
   .parrafoindex {
-    margin-top: 350px;
+    margin-top: 70px;
     margin-bottom: 20px;
     margin-left: 3.0vw;
     font-size: 3vw;
@@ -637,7 +636,7 @@ body {
     margin-top: 110px;
   }
   .footerindex {
-    margin-top: 250px;
+    margin-top: 150px;
   }
   /* html videos: */
   .tituloaudios {
@@ -704,7 +703,9 @@ body {
     height: 100%;
   }
   .figura {
-    display: none;
+    width: 50vh;
+    margin-left: 3vh;
+    margin-top: 35vh;
   }
 }
 
@@ -729,6 +730,7 @@ body {
     position: absolute;
   }
   #nav-boton {
+    font-size: 15px;
     background-color: #646a7c;
   }
   header {
@@ -764,18 +766,18 @@ body {
     margin-top: 52px;
   }
   .tituloindex {
-    margin-top: 250px;
+    margin-top: 90px;
     font-size: 5vw;
     margin-left: 20px;
     border-style: solid;
     border-color: #b5b2b1;
   }
   .parrafoindex {
-    margin-top: 350px;
+    margin-top: 150px;
     margin-bottom: 20px;
-    margin-left: 3.0vw;
+    margin-left: 2.0vw;
     font-size: 3vw;
-    width: 50vw;
+    width: 70vw;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
   }
@@ -852,7 +854,9 @@ body {
     height: 100%;
   }
   .figura {
-    display: none;
+    width: 50vh;
+    margin-left: 3vh;
+    margin-top: 450px;
   }
 }
 
