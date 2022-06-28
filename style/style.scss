@@ -53,7 +53,7 @@
 
 .tituloaudios{
     @extend .titulos;
-    @include margins(60px,150px)
+    @include margins(60px,80px)
     
     
 
@@ -84,6 +84,18 @@
     
     
     
+}
+
+.parrafoestudios {
+
+    
+    margin-left: 2vh;
+    font-size: 1.0vw;
+    text-align: left;
+    white-space:pre-wrap;
+
+
+
 }
 
 .footerindex{
@@ -163,6 +175,10 @@ body{
     margin-top: 0%;
 }
 
+.footerEstudios{
+    margin-top: 0%;
+}
+
 
 .textoclases {
     display: flex;
@@ -170,7 +186,7 @@ body{
 
     grid-area:textoclases;
     background-color: #eee4e1;
-    width: 55vh;
+    width: 50vh;
     margin-left: 100px;
     gap: 20px;
    
@@ -180,6 +196,9 @@ body{
     margin-left: 2vh;
     font-size: 1.0vw;
     margin-top: 15vh;
+    white-space:pre-wrap;
+    
+    
 }
 .tituloclases{
     @extend .titulos;
@@ -188,6 +207,28 @@ body{
     margin-left: 2vh;
 }
 
+.subtitulos{
+    margin-top: 3vw;
+    color: $textos;
+    padding: 1px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    
+}
+
+.textoEstudios{
+    display: flex;
+    flex-direction: column;
+
+    grid-area:textoclases;
+    background-color: #eee4e1;
+    width: 50vh;
+    margin-left: 10vh;
+    
+
+
+}
 
 
 @media (min-width: 200px) and (max-width: 441px)
@@ -311,10 +352,7 @@ body{
          /* html videos: */ 
          
 
-    .tituloaudios{
-        margin-top: 260px;
-        margin-left: 80px;
-    }
+    
     .videos{
         display: flex;
         flex-direction: column;
@@ -377,11 +415,102 @@ body{
         margin-top: 35vh;
     }
 
+
+
+    
+
+
+
+    .sectionclases{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    
+    
+    
+    }
+
+    .tituloclases{
+        margin-top: 8vw;
+        font-size:4.5vw ;
+        margin-left:2vw ;
+        border: none;
+        
+    }
+    .parrafoclases{
+        margin-top: 20vw;
+        width: 60vw;
+        margin-left: 1vw;
+        font-size: 2.5vw;
+        
+    }
+    .textoclases{
+        margin-left: 1vw;
+        width: 30vw;
+        background-color: #ede3e0;
+        
+        
+    }
+    .imagenclases{
+        width: 58vw;
+        margin-left: 45vw;
+    }
+
+    .sectionclases{
+        width:200px;
+    }
+    #navbar{
+        margin-left: 20px;
+        position: relative;
+        margin-top: 80px;
+    }
+
+    #nav-boton{
+
+        background-color: #646a7c;
+        font-size: 10px;
+    }
+
+    
+    .textoEstudios{
+        width: 60vw;
+        margin-left: 20vw;
+
+    }
+    .sectionEstudios{
+        margin-left: 0px;
+    }
+
+    .subtitulos{
+
+        font-size: 3vw;
+    }
+
+    .parrafoestudios{
+        font-size: 3vw;
+    }
+
+    .imagenclases {
+        width: 58vw;
+        margin-left: 30vw;
+    }
+
+    .tituloaudios{
+        margin-top: 70px;
+        margin-left: 40px;
+        font-size: 7vw;
+    }
+
+
     }
 
 
 @media (min-width: 442px) and (max-width: 618px)
 {
+
+
+    
 
 
     body{
@@ -396,21 +525,14 @@ body{
         margin-top: 130px;
         gap: 1px;
         position:absolute;
+        
 
         
         
         
     }
 
-    #nav-boton{
-        
-        font-size: 15px;
-        background-color:#646a7c;
-            
-           
-                
-    }
-
+   
     header{
     
         display: flex;
@@ -485,24 +607,44 @@ body{
         }
 
 
+    .tituloclases{
+        margin-top: 90px;
+        font-size: 5vw;
+        margin-left:20px ;
+        border-style:solid;
+        border-color: #b5b2b1;
+    }
+    .parrafoclases{
+        margin-top: 150px;
+        margin-bottom: 20px;
+        margin-left:2.0vw;
+        font-size: 3vw;
+        width: 70vw;
+        box-sizing: content-box;
+        }
 
+
+        .parrafoestudios{
+            font-size: 3vw;
+        }
 
    
 
     
     
-         /* html videos: */ 
+        
          
 
     .tituloaudios{
-        margin-top: 260px;
-        margin-left: 80px;
+        margin-top: 90px;
+        margin-left: 70px;
+        font-size: 7vw;
     }
     .videos{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 1px;
+        margin-left: 10vw;
     }
 
     .vid1 {
@@ -559,6 +701,73 @@ body{
         margin-left: 3vh;
         margin-top: 450px;
     }
+
+    .sectionclases{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    
+    
+    
+    }
+
+    .tituloclases{
+        margin-top: 8vw;
+        font-size:4.5vw ;
+        margin-left:2vw ;
+        border: none;
+        
+    }
+    .parrafoclases{
+        margin-top: 20vw;
+        width: 60vw;
+        margin-left: 1vw;
+        font-size: 2.5vw;
+        
+    }
+    .textoclases{
+        margin-left: 15vw;
+        width: 30vw;
+        background-color: #ede3e0;
+        
+        
+    }
+    .imagenclases{
+        width: 58vw;
+        margin-left: 45vw;
+    }
+
+    .sectionclases{
+        width:200px;
+    }
+    #navbar{
+        margin-left: 20px;
+        position: relative;
+        margin-top: 80px;
+    }
+
+    #nav-boton{
+
+        background-color: #646a7c;
+        font-size: 10px;
+    }
+
+    .textoEstudios{
+        width: 60vw;
+        margin-left: 40vw;
+
+    }
+    .sectionEstudios{
+        margin-left: 0px;
+    }
+
+    .subtitulos{
+
+        font-size: 3vw;
+    }
+
+   
 
     }
     
@@ -635,20 +844,22 @@ body{
          
 
     .tituloaudios{
-        margin-top: 260px;
+        margin-top: 100px;
         margin-left: 80px;
+        font-size: 6vw;
+        
     }
     .videos{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 1px;
+        
     }
 
     .vid1 {
         position: relative;
         height: auto;
-        width: 300px;
+        width: 450px;
         overflow: hidden;
         padding-bottom: 56.2%;
         margin-bottom: 20px;
@@ -664,7 +875,7 @@ body{
     .vid2 {
         position: relative;
         height: auto;
-        width: 300px;
+        width: 450px;
         overflow: hidden;
         padding-bottom: 56.2%;
         margin-bottom: 20px;
@@ -681,7 +892,7 @@ body{
     .vid3 {
         position: relative;
         height: auto;
-         width: 300px;
+         width: 450px;
         overflow: hidden;
         padding-bottom: 56.2%;
         margin-bottom: 20px;
@@ -696,6 +907,40 @@ body{
       .figura{
         margin-left: 2vh;
     }
+
+    .tituloclases{
+        margin-top: 3vw;
+        font-size:2.5vw ;
+        
+    }
+    .parrafoclases{
+        margin-top: 7vw;
+        width: 30vw;
+        
+        font-size: 1.3vw;
+        
+    }
+    .textoclases{
+        width: 38vw;
+        margin-left: 2vw;
+        
+    }
+    .imagenclases{
+        width: 38vw;
+       
+    }
+
+    .textoEstudios{
+        width: 35vw;
+        margin-left: 1vh;
+
+    }
+    .sectionEstudios{
+        margin-left: 0px;
+    }
+
+
+
 
 
 
@@ -768,6 +1013,101 @@ body{
         margin-top:110px ;
     }
 
+    .tituloclases{
+        margin-top: 3vw;
+        font-size:2.5vw ;
+    }
+    .parrafoclases{
+        margin-top: 7vw;
+        width: 30vw;
+        
+        font-size: 1.3vw;
+        
+        
+    }
+    .textoclases{
+        width: 38vw;
+        margin-left: 2vw;
+        
+        
+    }
+    .imagenclases{
+        width: 38vw;
+        
+    }
+
+    .textoEstudios{
+        width: 36vh;
+        margin-left: 2vh;
+
+    }
+    .sectionEstudios{
+        margin-left: 0px;
+    }
+
+    
+    .videos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .vid1 {
+        position: relative;
+        height: auto;
+        width: 600px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid1 iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .vid2 {
+        position: relative;
+        height: auto;
+        width: 600px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid2 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-left:1px;
+    }
+
+    .vid3 {
+        position: relative;
+        height: auto;
+         width: 600px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid3 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .tituloaudios{
+        margin-top:50px;
+        font-size: 5vw;
+    }
+
 
 }
 @media (min-width: 992px) and (max-width: 1099px){
@@ -819,10 +1159,87 @@ body{
         margin-top:105px ;
     }
 
+    .tituloclases{
+        margin-top: 3vw;
+        font-size:2vw ;
+    }
+    .parrafoclases{
+        margin-top: 7vw;
+        width: 30vw;
+        
+        font-size: 1.3vw;
+        
+    }
+    .textoclases{
+        margin-left:3vw ;
+        width: 34vw;
+    }
+    .imagenclases{
+        width: 36vw;
+    }
+
+    .textoEstudios{
+        width: 40vh;
+        margin-left: 3vh;
+    }
+
+    
+    .vid1 {
+        position: relative;
+        height: auto;
+        width: 400px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid1 iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .vid2 {
+        position: relative;
+        height: auto;
+        width: 400px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid2 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-left:1px;
+    }
+
+    .vid3 {
+        position: relative;
+        height: auto;
+         width: 400px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid3 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .tituloaudios{
+        margin-top:50px;
+        font-size: 4vw;
+    }
 
 
-
-
+    
 
 
 
@@ -848,10 +1265,87 @@ body{
         font-size: 1.4vw;
         width: 50vw;
     }
+    .tituloclases{
+        margin-top: 5vw;
+    }
+    .parrafoclases{
+        width: 30vw;
+        
+        font-size: 1.1vw;
+        margin-top: 13vh;
+        
+    }
+    .textoclases{
+        width: 32vw;
+    }
+    .imagenclases{
+        width: 30vw;
+    }
 
-    
+    .textoEstudios{
+        
+        margin-left: 3vh;
+    }
+
+    .videos{
+        margin-left: 5vw;
+    }
 
 
+    .vid1 {
+        position: relative;
+        height: auto;
+        width: 400px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid1 iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .vid2 {
+        position: relative;
+        height: auto;
+        width: 400px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid2 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-left:1px;
+    }
+
+    .vid3 {
+        position: relative;
+        height: auto;
+         width: 400px;
+        overflow: hidden;
+        padding-bottom: 56.2%;
+        margin-bottom: 20px;
+    }
+    .vid3 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .tituloaudios{
+        margin-top:50px;
+        font-size: 3vw;
+    }
 
 
 
@@ -862,25 +1356,37 @@ body{
 
 
 
-@media (min-width: 1400px) and (max-width: 1700px){
+@media (min-width: 1400px) and (max-width: 2000px){
 
 
-#navbar{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 90px;
-    border-radius: 5px rgba(115, 112, 116, 0.986) ;
-    gap: 20px;
-    align-items: center;
-  
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-top: 90px;
+        border-radius: 5px rgba(115, 112, 116, 0.986) ;
+        gap: 20px;
+        align-items: center;
     
-    
-}
-.parrafoindex{
-    
-    font-size: 1.2vw;
-    
-}
+        
+        
+    }
+    .parrafoclases{
+        width: 30vw;
+        
+        font-size: 1vw;
+        
+    }
+    .textoclases{
+        width: 32vw;
+    }
+    .imagenclases{
+        width: 30vw;
+    }
+
+    .parrafoestudios{
+        font-size: 0.9vw;
+    }
 
 }
+

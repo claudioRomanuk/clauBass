@@ -47,7 +47,7 @@
     grid-template-areas:
     "vid1 vid2"
     "vid3 .";
-    margin-left: 147px;
+    margin-left: 7vh;
     margin-top: 10px;
 }
 .vid1{
@@ -84,30 +84,4 @@
 .imagenclases{
     grid-area: imagenclases;
     
-}
-.textoclases {
-    display: flex;
-    flex-direction: column;
-
-    grid-area:textoclases;
-    background-color: #eee4e1;
-    width: 55vh;
-    margin-left: 100px;
-    gap: 20px;
-   
-}
-.parrafoclases{
-    width: 50vh;
-    margin-left: 2vh;
-    font-size: 1.0vw;
-    margin-top: 15vh;
-}
-.tituloclases{
-    color: $textos;
-    padding: 1px;
-    font-family: 'Comic Neue', cursive;
-    font-size: 2.0vw;;
-    position: absolute;
-    margin-top: 5vh;
-    margin-left: 2vh;
 }
