@@ -19,7 +19,7 @@ header{
         color:RGB(249 203 171);
         gap: 10px;
         margin-top: 1px;
-        padding: 1px;
+        padding: 5px;
         
        
     
@@ -36,6 +36,7 @@ header{
     gap: 20px;
     align-items: center;
     background-color: none;
+    z-index: 3;
     
 
   
@@ -127,8 +128,9 @@ nav ul li a:hover{
 
 #nav-boton{
    color:RGB(249 203 171);
-   padding: 1px;
+   padding: 5px;
    gap: 10px;
+   margin: 5px;
    
 }
 

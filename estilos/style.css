@@ -32,7 +32,7 @@ header #nav-boton {
   color: RGB(249 203 171);
   gap: 10px;
   margin-top: 1px;
-  padding: 1px;
+  padding: 5px;
 }
 
 #navbar {
@@ -50,6 +50,7 @@ header #nav-boton {
       -ms-flex-align: center;
           align-items: center;
   background-color: none;
+  z-index: 3;
 }
 
 footer {
@@ -114,8 +115,9 @@ nav ul li a:hover {
 
 #nav-boton {
   color: RGB(249 203 171);
-  padding: 1px;
+  padding: 5px;
   gap: 10px;
+  margin: 5px;
 }
 
 .layout {
@@ -276,7 +278,7 @@ header #nav-boton {
   color: RGB(249 203 171);
   gap: 10px;
   margin-top: 1px;
-  padding: 1px;
+  padding: 5px;
 }
 
 #navbar {
@@ -294,6 +296,7 @@ header #nav-boton {
       -ms-flex-align: center;
           align-items: center;
   background-color: none;
+  z-index: 3;
 }
 
 footer {
@@ -358,8 +361,9 @@ nav ul li a:hover {
 
 #nav-boton {
   color: RGB(249 203 171);
-  padding: 1px;
+  padding: 5px;
   gap: 10px;
+  margin: 5px;
 }
 
 .contenido {
@@ -458,9 +462,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 80px;
   height: 200px;
   gap: 20px;
+}
+
+.tituloFormulario {
+  margin-top: -50px;
+  font-size: 2em;
 }
 
 .nombre {
@@ -773,6 +782,10 @@ body {
     margin-left: 40px;
     font-size: 7vw;
   }
+  .formulario {
+    gap: 50px;
+    margin-top: 100px;
+  }
 }
 
 @media (min-width: 442px) and (max-width: 618px) {
@@ -994,6 +1007,10 @@ body {
   .subtitulos {
     font-size: 3vw;
   }
+  .formulario {
+    gap: 50px;
+    margin-top: 100px;
+  }
 }
 
 @media (min-width: 619px) and (max-width: 791px) {
@@ -1122,6 +1139,10 @@ body {
   }
   .sectionEstudios {
     margin-left: 0px;
+  }
+  .formulario {
+    margin-top: 100px;
+    gap: 50px;
   }
 }
 
